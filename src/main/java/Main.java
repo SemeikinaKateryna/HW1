@@ -11,7 +11,7 @@ public class Main {
         double y = 0;
         if(x < 1.4){
             y = a * pow(x,2) + b * x + c;
-        } else if ((abs(x) - 1.4) <= err) {
+        } else if ((abs(x - 1.4)) <= err) {
             y = a/x + sqrt(pow(x,2) + 1);
         } else if (x > 1.4) {
             y = (a + b * x) / sqrt(pow(x,2) + 1);
